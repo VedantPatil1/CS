@@ -1,0 +1,9 @@
+function[]=VAP_GAUSS2P(fun,x0,xn)
+a=(xn-x0)/2;
+b=(xn+x0)/2;
+x1=-a/sqrt(3)+b;
+x2=a/sqrt(3)+b;
+f1=feval(fun,x1);
+f2=feval(fun,x2);
+I=(f1+f2)*a;
+I
